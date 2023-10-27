@@ -48,3 +48,20 @@ function Picture(){
   const pictureElement= document. querySelector("#picture")
   pictureElement.style.display = "inline"
 }
+
+function pickRandomColor(){
+  // const colorList= ["red", "orange", "yellow"]
+  // const randomIndex= Math.floor (Math.random()*colorList.length)
+  //Züfällig einen Index//
+  // const randomColor = colorList[randomIndex];
+  // Hätten das Element an dieser Liste//
+
+  const red = Math.floor(Math.random() * 256 )
+  const orange = Math.floor(Math.random() * 256 )
+  const yellow = Math.floor(Math.random() * 256)
+
+  const bodyElem = document.querySelector("body")
+  bodyElem.style.backgroundColor = `rgb(${red}, ${orange}, ${yellow})`
+}
+setInterval(pickRandomColor, 2000)
+
