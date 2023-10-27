@@ -44,3 +44,7 @@ function writeText(){
   outputElement.textContent= outputText + "\n" + inputElement.value
  
 }
+function Picture(){
+  const pictureElement= document. querySelector("#picture")
+  pictureElement.style.display = "inline"
+}
